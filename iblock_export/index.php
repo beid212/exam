@@ -6,13 +6,13 @@ use Vedita\Iblock\Export;
 <?
 $APPLICATION->SetTitle('Iblock export');
 
-$iblockId = 5;
+$iblockId = 16;
 
 $sPath = Export::up(
     Export::collect($iblockId)
-    ->select(['ID','NAME'])
+    ->select(['ID','NAME','STRING_TEST','NUMBER_TEST','LIST_TEST.ITEM','FILE_TEST.FILE'])
     ->order('ID')
-    ->columnOrder(['NAME','ID'])
+    ->columnOrder(['ID','STRING_TEST','NAME','FILE_TEST','LIST_TEST'])
 )->write();
 echo "Путь до файла: $sPath";
 
