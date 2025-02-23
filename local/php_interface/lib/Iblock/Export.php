@@ -199,6 +199,8 @@ class Export
         $obWriter->setTempFolder(sys_get_temp_dir());
         // 2. Открытие файла для записи
         $sFilePath = $_SERVER['DOCUMENT_ROOT'].self::$path.'/output_'.date('Ymd_His').'.xlsx';  // Путь к выходному файлу
+        if (!file_exists($_SERVER['DOCUMENT_ROOT'].self::$path))
+            throw new \Exception('The catalog does not exist! Change the values of the path variable');
 
         $obWriter->openToFile($sFilePath);
 
