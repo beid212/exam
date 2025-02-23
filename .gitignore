@@ -1,0 +1,57 @@
+# исключаем папку /bitrix кроме некоторых подпапок
+/bitrix/
+
+# исключаем логи
+/local/php_interface/logs/
+/local/logs/
+
+# исключаем загружаемые файлы
+/upload/
+
+# различные системные папки и файлы хостингов и операционных систем
+/cgi-bin/
+/awstats/
+/webstat/
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# исключаем все текстовые и подобные ресурсы 
+*.xml
+*.html
+*.txt
+*.log
+*.css.map
+
+# архивы, включая многотомные
+*.zip
+*.zip*  
+*.tar
+*.tar*
+*.enc
+*.enc*
+*.gz
+*.gz*
+*.tgz
+*.tgz*
+*.sql
+*.rar
+.hg
+.ftpconfig
+*.doc
+*.docx
+*.pdf
+*.rtf
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.psd
+*.psb
+*.sketch
+core.*
+
+# храним robots.txt 
+!/robots.txt
