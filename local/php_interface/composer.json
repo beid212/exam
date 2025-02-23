@@ -1,0 +1,14 @@
+{
+    "name": "vedita/graid",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Vedita\\": "lib/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "shuchkin/simplexlsx": "^1.1",
+        "box/spout": "^3.3"
+    }
+}
